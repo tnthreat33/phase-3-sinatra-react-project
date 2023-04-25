@@ -1,3 +1,3 @@
-class Game < ActiveRecord
+class Game < ActiveRecord::Base
     belongs_to :team
-end
+  end
