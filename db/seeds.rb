@@ -6,7 +6,7 @@ cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"]
 states = ["NY", "CA", "IL", "TX", "AZ"]
 teams = []
 
-team_names.each_with_index do |name, index|
+team_names.first(5).each_with_index do |name, index|
   team = Team.create(name: name, city: cities[index], state: states[index])
   teams << team
 end
@@ -23,7 +23,7 @@ teams.each do |team|
       location = locations[index % locations.length]
       date = Time.now + (index * 7).days
       
-      Game.create(team: team, opponent: opponent_name, date: date, location: location,
+      Game.create(team: team_id, opponent: opponent_name, date: date, location: location,
                   team_score: team_score, opponent_score: opponent_score)
     end
   end
