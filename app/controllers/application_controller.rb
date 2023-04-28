@@ -7,9 +7,9 @@ class ApplicationController < Sinatra::Base
     teams.to_json(include: :games)
   end
   
-  delete '/teams/:id' do
-    team = Team.find(params[:id])
-    team.destroy
+  delete '/games/:id' do
+    games = Games.find(params[:id])
+    games.destroy
     { message: "Team with id #{params[:id]} deleted" }.to_json
   end
 
