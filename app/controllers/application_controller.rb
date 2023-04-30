@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
   # Add your routes here
   get "/teams" do
     teams = Team.all
-    teams.to_json(include: :games)
+    teams.to_json(include: :games, methods: :record)
   end
   
   delete '/games/:id' do
