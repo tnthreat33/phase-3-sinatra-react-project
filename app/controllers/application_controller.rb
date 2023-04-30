@@ -23,6 +23,7 @@ class ApplicationController < Sinatra::Base
       opponent_score: params[:opponent_score],
       team_id: params[:team_id]
     )
+    
     game.to_json
   end
   
