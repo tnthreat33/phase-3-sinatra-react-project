@@ -13,6 +13,12 @@ class ApplicationController < Sinatra::Base
     { message: "Game with id #{params[:id]} deleted" }.to_json
   end
 
+  delete '/teams/:id' do
+    team = Team.find(params[:id])
+    team.destroy
+    { message: "Team with id #{params[:id]} deleted" }.to_json
+  end
+
   patch '/games/:id' do
     game = Game.find(params[:id])
     game.update(
