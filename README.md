@@ -22,7 +22,7 @@ Usage
 
 The app includes the following routes:
 
-    -GET /teams -This route returns a list of all teams, including each team's record and games.
+    -GET /teams -This route returns a list of all teams, including each team's  games.
 
     -PUT/games/:id -This route allows users to update information about a specific game.
 
