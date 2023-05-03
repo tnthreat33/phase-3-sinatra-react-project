@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
     team = Team.create(
       name: params[:name],
       city: params[:city],
-      date: params[:date],
+      state: params[:state],
     )
     team.to_json
   end
