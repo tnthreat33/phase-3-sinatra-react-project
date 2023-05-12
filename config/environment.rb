@@ -8,3 +8,8 @@ Bundler.require(:default, ENV['RACK_ENV'])
 
 # Require in all files in 'app' directory
 require_all 'app'
+
+#Overall, this code snippet sets the RACK_ENV environment variable if it hasn't 
+#been set before, loads the required gems based on the environment, and 
+#requires all the files in the 'app' directory, allowing the application
+# to set up its environment and load the necessary code.

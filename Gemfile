@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+#gem is existing code libraries that can be used by other developers
 
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra

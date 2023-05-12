@@ -1,12 +1,12 @@
 puts "🌱 Seeding data..."
 
-# Create teams
+
 center_grove = Team.create(name: "Center Grove", city: "Greenwood", state: "IN")
 avon = Team.create(name: "Avon", city: "Avon", state: "IN")
 new_palestine = Team.create(name: "New Palestine", city: "Palestine", state: "IN")
 columbus_north = Team.create(name: "Columbus North", city: "Columbus", state: "IN")
 
-# Create games
+
 Game.create(team: center_grove, opponent: "Whiteland", date: Date.new(2023, 03, 28), location: "Greenwood", team_score: 9, opponent_score: 2)
 Game.create(team: center_grove, opponent: "Zionsville", date: Date.new(2023, 03, 29), location: "Zionsville", team_score: 14, opponent_score: 3)
 Game.create(team: center_grove, opponent: "Pendleton Heights", date: Date.new(2023, 03, 31), location: "Pendleton", team_score: 15, opponent_score: 6)

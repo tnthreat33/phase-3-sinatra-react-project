@@ -1,4 +1,4 @@
-class Team < ActiveRecord::Base
-  has_many :games
+class Team < ActiveRecord::Base 
+  has_many :games 
 
 end

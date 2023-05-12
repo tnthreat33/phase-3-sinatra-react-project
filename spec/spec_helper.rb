@@ -1,3 +1,7 @@
+#Overall, this file sets up the testing environment for a Ruby application 
+#using Sinatra and ActiveRecord. It configures RSpec with database cleaning 
+#strategies, includes necessary modules
+
 ENV['RACK_ENV'] ||= 'test'
 require_relative "../config/environment"
 require "sinatra/activerecord/rake"

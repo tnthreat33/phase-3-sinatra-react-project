@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_21_233623) do
-
+ActiveRecord::Schema.define(version: 2023_04_21_233623) do 
   create_table "games", force: :cascade do |t|
     t.integer "team_id"
     t.string "opponent"
